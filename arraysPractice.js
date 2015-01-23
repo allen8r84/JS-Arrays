@@ -59,11 +59,24 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
   //Code Here
 var evenFinder = function(a) {
+    var newArr = [];
     for (var i = 0; i < a.length; i++) {
         if (a[i] % 2 === 0) {
-            console.log(a[i]);
+            newArr.push(a[i]);
         }
     }
+    return a = newArr.slice();
+}
+
+
+var evenFinder = function(a) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] % 2 !== 0) {
+            a.splice(a[i]);
+            i--;
+        }
+    }
+    return a;
 }
 
 //Next problem
@@ -100,7 +113,17 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
   //Code Here
-
+var finder = function(a, b) {
+    var newRand = a;
+    console.log(newRand);
+    for (var i = 0; i < b.length; i++) {
+        if (newRand === b[i]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
 
 //Next problem
 
