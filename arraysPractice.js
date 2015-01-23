@@ -1,6 +1,6 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
-
+//#1
 var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item the given array.
 
@@ -9,7 +9,7 @@ var first = function(a) {
     return a[0];
 }
 
-//Next problem
+//#2 Next problem
 
 
 
@@ -23,7 +23,7 @@ var last = function(a) {
     return a[b - 1];
 }
 
-//Next Problem
+//#3 Next Problem
 
 
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
@@ -36,7 +36,7 @@ var looper = function(a) {
     }
 }
 
-//Next problem
+//#4 Next problem
 
 
 
@@ -51,35 +51,25 @@ var reversedLooper = function(a) {
     }
 }
 
-//Next Problem
+//#6 Next Problem
 
 
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
   //Code Here
-var evenFinder = function(a) {
-    var newArr = [];
-    for (var i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            newArr.push(a[i]);
-        }
-    }
-    return a = newArr.slice();
-}
-
 
 var evenFinder = function(a) {
     for (var i = 0; i < a.length; i++) {
         if (a[i] % 2 !== 0) {
-            a.splice(a[i]);
+            a.splice(i,1);
             i--;
         }
     }
     return a;
 }
 
-//Next problem
+//#7 Next problem
 
 
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
@@ -116,14 +106,15 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var finder = function(a, b) {
     var newRand = a;
     console.log(newRand);
-    for (var i = 0; i < b.length; i++) {
+    for (var i = 0; i < b.length; i++) {       
         if (newRand === b[i]) {
-            return true;
-        } else {
-            return false;
+           return true;
         }
     }
+    return false;
 }
+
+
 
 //Next problem
 
