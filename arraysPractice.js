@@ -93,7 +93,7 @@ var divider = function(a, b, c) {
     return newArr = [b, c];
 }
 
-//Next Problem
+//#8 Next Problem
 
 
 var getRandomArbitrary = function() {
@@ -104,10 +104,10 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //Code Here
 var finder = function(a, b) {
-    var newRand = a;
-    console.log(newRand);
+    console.log("The Random Number is: " + a);
     for (var i = 0; i < b.length; i++) {       
-        if (newRand === b[i]) {
+        console.log("The Array Contains:  " + b);
+        if (a === b[i]) {
            return true;
         }
     }
@@ -116,7 +116,7 @@ var finder = function(a, b) {
 
 
 
-//Next problem
+//#9 Next problem
 
 
 
@@ -124,7 +124,9 @@ var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
 
   //Code Here
-
+var reverse = function(a) {
+    return a.split("").reverse().join("");
+}
 
 //Next Problem
 
