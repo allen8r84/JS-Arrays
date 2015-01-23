@@ -128,7 +128,7 @@ var reverse = function(a) {
     return a.split("").reverse().join("");
 }
 
-//Next Problem
+//#10 Next Problem
 
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
@@ -143,6 +143,20 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
+var removeItem = function (a, b) {
+    console.log("The grocery List is: " + a);
+    for (var i = 0; i < a.length; i++) {       
+        console.log("Item to remove is:  " + b);
+        if (b.toUpperCase() === a[i].toUpperCase()) {
+           a.splice(i,1);
+        }
+    }
+    return a;
+}
+var addItem = function(a, b) {
+    a.push(b);
+    return a;
+}
 
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
