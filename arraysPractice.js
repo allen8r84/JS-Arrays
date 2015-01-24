@@ -239,3 +239,21 @@ longest(arr1, arr2);
 */
 
   //Code Here
+var both = function(a, b) {
+    var newArr = [];
+    if (a.length >= b.length) {
+        newArr = a.slice();
+        for (var i = 0; i < b.length; i++) {
+              newArr.push(b[i]);
+        }
+    } else {
+        newArr = b.slice();
+        for (var i = 0; i < a.length; i++) {
+               newArr.push(a[i]);
+        }
+    }
+    return newArr;
+}
+console.log(arr1);
+console.log(arr2);
+both(arr1, arr2);
