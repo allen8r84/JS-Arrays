@@ -179,7 +179,7 @@ var maker = function() {
 }
 
 
-//Next Problem
+//#12 Next Problem
 
 
 var numbers = [5, '9', 16, 19, '25', '34', 48];
@@ -187,7 +187,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
-
+var addTen = function(a) {
+    for (var i = 0; i < a.length; i++) {
+        var newNum = parseInt(a[i]) + 10;
+        a.splice(i,1,newNum); 
+    }
+    return a;
+}
 
 
 //Next Problem
