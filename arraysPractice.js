@@ -93,6 +93,7 @@ var divider = function(a, b, c) {
     return newArr = [b, c];
 }
 
+divider(nums, evens, odds);
 //#8 Next Problem
 
 
@@ -196,7 +197,7 @@ var addTen = function(a) {
 }
 
 
-//Next Problem
+//#13 Next Problem
 
 
 
@@ -214,6 +215,22 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
   //Code Here
+var longest = function(a, b) {
+    if (a.length > b.length) {
+        console.log("the first array is longest: ");
+        return a;
+    } else if (b.length > a.length) {
+        console.log("the second array is longest: ");
+        return b;
+    } else {
+        return null;
+        console.log("the same");
+    }
+
+}
+console.log(arr1);
+console.log(arr2);
+longest(arr1, arr2);
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
