@@ -163,14 +163,20 @@ var addItem = function(a, b) {
 
 
 
-//Next Problem
+//#11 Next Problem
 
 
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
+var maker = function() {
+    var newArr = [];
+    for (var i = 0; i < 215; i++) {
+        newArr.push(i + 1);
+    }
+    return newArr;
+}
 
 
 //Next Problem
